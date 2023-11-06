@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
              let cartItem = document.createElement('li');
              cartItem.textContent = `${productName} - ${productPrice}`;
+             cartItem.setAttribute('data-product-id', this.parentElement.querySelector('.remove-button').getAttribute('data-product-id'));
 
 
 
